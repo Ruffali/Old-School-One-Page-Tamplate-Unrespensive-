@@ -1,0 +1,92 @@
+#welcome{
+    background: linear-gradient(to left,rgba(56, 85, 91, 0.7),rgba(56, 85, 91, 0.7)),url(../Images/background/body.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    color: $contentColor;
+    padding-bottom: 40%;
+    margin-bottom: -26%;
+    position: relative;
+    .container{
+        .row{
+            .col-md-12{
+                .content{
+                    text-align: center;
+                    transform: rotate(-5deg);
+                    position: relative;
+                    .before{
+                        position: absolute;
+                        width: 100%;
+                        height: 201px;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 2%;
+                            height: 24px;
+                            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                            background: $clipPathColor;
+                            top: 46%;
+                            left: 16%;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 2%;
+                            height: 24px;
+                            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                            background: $clipPathColor;
+                            top: 46%;
+                            right: 16%;
+                        }
+                    }
+                    h1{
+                        font-family: 'Lemonada', cursive;
+                        text-transform: uppercase;
+                        font-size: 14ch;
+                        font-weight: bold;
+                        position: relative;
+                        letter-spacing: -16px;
+                        transition: all 0.4s linear;
+                        &::before{
+                            content: "welcome";
+                            position: absolute;
+                            text-transform: uppercase;
+                            color: $beforeColor;
+                            font-weight: 100;
+                        }
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 23%;
+                        height: 49px;
+                        clip-path: polygon(46% 37%, 77% 26%, 100% 43%, 80% 59%, 47% 55%, 23% 53%, 0 51%, 0 50%, 21% 43%);
+                        background: $clipPathColor;;
+                        top: 47%;
+                        left: -10%;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 23%;
+                        height: 49px;
+                        clip-path: polygon(51% 39%, 72% 45%, 100% 53%, 100% 55%, 72% 59%, 50% 62%, 16% 68%, 0 50%, 15% 29%);
+                        background: $clipPathColor;;
+                        top: 47%;
+                        right: -10%;
+                    }
+                }
+                .longContent{
+                    padding: 5% 0%;
+                    blockquote{
+                        font-family: 'Courgette', cursive;
+                    }
+                }
+            }
+        }
+    }
+    &:hover .container .row .col-md-12 .content h1{
+        letter-spacing: -10px;
+    }
+}

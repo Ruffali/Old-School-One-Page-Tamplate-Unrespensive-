@@ -1,0 +1,298 @@
+#service{
+    background-image: url(../Images/background/service.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 16%;
+    color: #f6e8c3;
+    clip-path: polygon(50% 12%, 93% 0%, 100% 0%, 100% 84%, 93% 84%, 50.5% 94%, 7% 84%, 0% 84%, 0% 0%, 9% 0%);
+    padding-bottom: 25%;
+    margin-top: -27.5%;
+    z-index: 1;
+    .container{
+        .row{
+            .col-md-12{
+                position: relative;
+                .content{
+                    text-align: center;
+                    position: relative;
+                    .before{
+                        position: absolute;
+                        width: 100%;
+                        height: 201px;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 2%;
+                            height: 24px;
+                            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                            background: $carouselBackground;
+                            top: 46%;
+                            left: 16%;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 2%;
+                            height: 24px;
+                            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                            background: $carouselBackground;
+                            top: 46%;
+                            right: 16%;
+                        }
+                    }
+                    h1{
+                        font-family: 'Lemonada', cursive;
+                        text-transform: uppercase;
+                        font-size: 14ch;
+                        font-weight: bold;
+                        position: relative;
+                        letter-spacing: -16px;
+                        transition: all 0.4s linear;
+                        color: $carouselBackground;
+                        &::before{
+                            content: "services";
+                            position: absolute;
+                            text-transform: uppercase;
+                            color: $contentColor;
+                            font-weight: 100;
+                        }
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 23%;
+                        height: 49px;
+                        clip-path: polygon(46% 37%, 77% 26%, 100% 43%, 80% 59%, 47% 55%, 23% 53%, 0 51%, 0 50%, 21% 43%);
+                        background: $carouselBackground;
+                        top: 47%;
+                        left: -10%;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 23%;
+                        height: 49px;
+                        clip-path: polygon(51% 39%, 72% 45%, 100% 53%, 100% 55%, 72% 59%, 50% 62%, 16% 68%, 0 50%, 15% 29%);
+                        background: $carouselBackground;
+                        top: 47%;
+                        right: -10%;
+                    }
+                }
+                .longContent{
+                    padding: 5% 0%;
+                    padding-bottom: 0%;
+                    text-align: center;
+                    blockquote{
+                        font-size: 30px;
+                        font-family: 'Courgette', cursive;
+                        color: $carouselBackground;
+                    }
+                }
+                .triangleDiv{
+                    position: absolute;
+                    bottom: -315%;
+                    left: 22.5%;
+                    width: 55%;
+                    padding-top: 1.5%;
+                    height: 248px;
+                    text-align: center;
+                    background-color: #bd585a;
+                    clip-path: polygon(50% 0%, 100% 1%, 100% 2%, 51% 37%, -1% -3%, 0% 0%);
+                    h1{
+                        color: $contentColor;
+                        text-transform: uppercase;
+                        font-size: 3ch;
+                        transition: all 0.4s linear;
+                        cursor: pointer;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .col-md-7{
+                .header{
+                    padding-top: 2%;
+                    h1{
+                        text-transform: uppercase;
+                        color: #823233;
+                        font-weight: bold;
+                        letter-spacing: -1px;
+                        font-size: 3ch;
+                    }
+                    .row{
+                        .col-md-3{
+                            .icon{
+                                position: relative;
+                                width: 75%;
+                                height: 109px;
+                                background-color: $liBackground;
+                                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                                &::before{
+                                    position: absolute;
+                                    content: "\f108";
+                                    font-family: "fontAwesome";
+                                    top: 21%;
+                                    left: 28%;
+                                    font-size: 4ch;
+                                    color: white;
+                                }
+                            }
+                        }
+                        .col-md-8{
+                            .seviceContent{
+                                blockquote{
+                                    color: black;
+                                    text-align: left;
+                                }
+                            }
+                        }  
+                    }
+                    &:nth-child(2){
+                        .row{
+                            .col-md-3{
+                                .icon{
+                                    &::before{
+                                        content: "\f030";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        .row{
+                            .col-md-3{
+                                .icon{
+                                    &::before{
+                                        content: "\f040";
+                                        left: 34%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-5{
+                .workPower{
+                    padding-top: 7%;
+                    .workContent{
+                        h1{
+                            color: black;
+                            font-size: 2ch;
+                            text-transform: uppercase;
+                            transition: all 0.5s linear;
+                        }
+                    }
+                    .strengh{
+                        width: 70%;
+                        height: 50px;
+                        background-color: #3B4647;
+                        border-radius: 23px;
+                        position: relative;
+                        cursor: pointer;
+                        overflow: hidden;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 6%;
+                            left: 1.2%;
+                            background-color: #823233;
+                            width: 0%;
+                            height: 43px;
+                            border-radius: 23px;
+                            transition: all 0.5s linear;
+                        }
+                    }
+                    &:hover .strengh:before{
+                        width: 98%;
+                    }
+                    &:hover .workContent h1{
+                        color: #823233;
+                    }
+                }
+            }
+            .col-md-12{
+                .clients{
+                    padding-top: 5%;
+                    text-align: center;
+                    position: relative;
+                    .before{
+                        position: absolute;
+                        width: 100%;
+                        height: 201px;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 1%;
+                            height: 13px;
+                            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                            background: #B7562E;
+                            top: 7%;
+                            right: 37%;  
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 1%;
+                            height: 13px;
+                            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                            background: #B7562E;
+                            top: 7%;
+                            left: 37%;
+                        }
+                    }
+                    h1{
+                        font-family: 'Lemonada', cursive;
+                        text-transform: uppercase;
+                        font-size: 3ch;
+                        font-weight: bold;
+                        position: relative;
+                        transition: all 0.4s linear;
+                        color: $yellowPartColor;
+                    }
+                    &::before{
+                        content: "";
+                            position: absolute;
+                            width: 17%;
+                            height: 42px;
+                            clip-path: polygon(46% 37%, 77% 26%, 100% 43%, 80% 59%, 47% 55%, 23% 53%, 0 51%, 0 50%, 21% 43%);
+                            background: #B7562E;
+                            top: 59%;
+                            left: 19%;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 17%;
+                        height: 42px;
+                        clip-path: polygon(51% 39%, 72% 45%, 100% 53%, 100% 55%, 72% 59%, 50% 62%, 16% 68%, 0 50%, 15% 29%);
+                        background: #B7562E;
+                        top: 59%;
+                        right: 19%;
+                    }
+                }
+                .friends{
+                    .owl-carousel{
+                        .owl-item{
+                            width: 0%;
+                        }
+                        .item{
+                            img{
+                                width: 60%;
+                                height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .owl-theme .owl-dots .owl-dot{
+        display: none;
+    }
+    &:hover .container .row .col-md-12 .content h1{
+        letter-spacing: -6px;
+    }
+}

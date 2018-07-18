@@ -1,0 +1,278 @@
+#yellowPart{
+    background-image: url(../Images/background/yellowPart.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 38%;
+    color: #f6e8c3;
+    clip-path: polygon(50% 19%, 90% 0%, 100% 0%, 100% 84%, 93% 84%, 50.5% 92%, 7% 83%, 0% 83%, 0% 0%, 9% 0%);
+    padding-bottom: 19%;
+    .container{
+        .row{
+            .col-md-12{
+                position: relative;
+                .content{
+                    text-align: center;
+                    position: relative;
+                    .before{
+                        position: absolute;
+                        width: 100%;
+                        height: 201px;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 2%;
+                            height: 24px;
+                            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                            background: $yellowPartColor;
+                            top: 46%;
+                            left: 16%;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 2%;
+                            height: 24px;
+                            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                            background: $yellowPartColor;
+                            top: 46%;
+                            right: 16%;
+                        }
+                    }
+                    h1{
+                        font-family: 'Lemonada', cursive;
+                        text-transform: uppercase;
+                        font-size: 14ch;
+                        font-weight: bold;
+                        position: relative;
+                        letter-spacing: -28px;
+                        transition: all 0.4s linear;
+                        color: $yellowPartColor;
+                        &::before{
+                            content: "our work";
+                            position: absolute;
+                            text-transform: uppercase;
+                            color: #F8B52B;
+                            font-weight: 100;
+                        }
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 23%;
+                        height: 49px;
+                        clip-path: polygon(46% 37%, 77% 26%, 100% 43%, 80% 59%, 47% 55%, 23% 53%, 0 51%, 0 50%, 21% 43%);
+                        background: $yellowPartColor;;
+                        top: 47%;
+                        left: -10%;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 23%;
+                        height: 49px;
+                        clip-path: polygon(51% 39%, 72% 45%, 100% 53%, 100% 55%, 72% 59%, 50% 62%, 16% 68%, 0 50%, 15% 29%);
+                        background: $yellowPartColor;;
+                        top: 47%;
+                        right: -10%;
+                    }
+                }
+                .longContent{
+                    padding: 5% 0%;
+                    padding-bottom: 0%;
+                    text-align: center;
+                    blockquote{
+                        font-size: 30px;
+                        font-family: 'Courgette', cursive;
+                        color: black;
+                    }
+                }
+                .isoTop{
+                    .container{
+                        width: 80%;
+                        margin: 0 auto;
+                        padding-top: 10%;
+                        .horizontalNavbar{
+                        margin-left: 22%;
+                        position: relative;
+                            li{
+                                float: left;
+                                margin-right: 1%;
+                                margin-top: 2%;
+                                margin-bottom: 2%;
+                                a{
+                                    padding: 15px;
+                                    display: inline-block;
+                                    background: $liBackground;
+                                    color: white;
+                                    transition: all 0.3s linear;
+                                    clip-path: polygon(84% 0, 100% 48%, 84% 100%, 18% 100%, 0 48%, 18% 0);
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                }
+                                .nightspace{
+                                    border-top-right-radius: 5px;
+                                    border-bottom-right-radius: 5px;
+                                }
+                                .all{
+                                    border-right: 1px solid $carouselBackground;
+                                    border-top-left-radius: 5px;
+                                    border-bottom-left-radius: 5px;
+                                }
+                                &:last-child{
+                                    border-right: none;
+                                }
+                            }
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 113.5%;
+                                height: 2px;
+                                top: -8%;
+                                left: -23%;
+                                border-top: 1px dashed black;
+                            }
+                        }
+                        .clearfix{
+                            clear: both;
+                        }
+                        .main{
+                            width: 100%;
+                            height: 800px;
+                            margin-top: 20px;
+                            position: relative;
+                            .mainDivs{
+                                position: relative;
+                                width: 21%;
+                                height: 220px;
+                                float: left;
+                                margin-bottom: 4%;
+                                margin-right: 4%;
+                                border-radius: 5px;
+                                filter: grayscale(1);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                transition: all 0.5s linear;
+                                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                                cursor: pointer;
+                                .number{
+                                    width: 44%;
+                                    height: 50px;
+                                    border: 1px solid black;
+                                    text-align: center;
+                                    line-height: 50px;
+                                    background: linear-gradient(to right, rgba(2, 2, 2, 0.37), rgba(0, 0, 0, 0.493));
+                                    border-radius: 5px;
+                                    color: white;
+                                    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                                    margin: auto;
+                                    transition: all 1s linear;
+                                }
+                                .info{
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 0px;
+                                    border-radius: 5px;
+                                    text-align: center;
+                                    line-height: 220px;
+                                    bottom: 0%;
+                                    background: linear-gradient(to right, rgba(2, 2, 2, 0.472), rgba(0, 0, 0, 0.431));
+                                    color: white;
+                                    transition: all 0.8s ease-in;
+                                }
+                                &:nth-of-type(1){
+                                    background-image: url('../Images/isotop/1.jpg');
+                                   
+                                }
+                                &:nth-of-type(2){
+                                    background-image: url('../Images/isotop/2.jpg');
+                                }
+                                &:nth-of-type(3){
+                                    background-image: url('../Images/isotop/3.jpg');
+                                }
+                                &:nth-of-type(4){
+                                    background-image: url('../Images/isotop/4.jpg');
+                                }
+                                &:nth-of-type(5){
+                                    background-image: url('../Images/isotop/5.jpg');
+                                }
+                                &:nth-of-type(6){
+                                    background-image: url('../Images/isotop/6.jpg');
+                                }
+                                &:nth-of-type(7){
+                                    background-image: url('../Images/isotop/7.jpg');
+                                }
+                                &:nth-of-type(8){
+                                    background-image: url('../Images/isotop/8.jpg');
+                                }
+                                &:nth-of-type(9){
+                                    background-image: url('../Images/isotop/9.jpg');
+                                }
+                                &:hover{
+                                    filter: none;
+                                    transform: scale(1.05);
+                                }
+                                &:hover .info{
+                                    height: 220px;
+                                    line-height: 220px;
+                                }
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 150%;
+                                    height: 50px;
+                                    background: rgba(255, 255, 255, 0.486);
+                                    border: 1px solid white;
+                                    top: -10%;
+                                    transform: rotate(-32deg);
+                                    left: -63%;
+                                    transition: all 0.3s linear;
+                                }
+                                &:hover:before{
+                                    top: 96%;
+                                    left: 13%;
+                                }
+                            }
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                width: 88.5%;
+                                height: 20px;
+                                top: -2%;
+                                left: 4%;
+                                border-top: 1px dashed black;
+                            }
+                        }
+                    }
+                }
+                .triangleDiv{
+                    position: absolute;
+                    bottom: -15%;
+                    left: 22%;
+                    width: 55%;
+                    padding-top: 1.5%;
+                    height: 248px;
+                    text-align: center;
+                    background-color: #bd585a;
+                    clip-path: polygon(50% 0%, 100% 1%, 100% 2%, 51% 37%, -1% -3%, 0% 0%);
+                    h1{
+                        color: $contentColor;
+                        text-transform: uppercase;
+                        font-size: 3ch;
+                        transition: all 0.4s linear;
+                        cursor: pointer;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover .container .row .col-md-12 .content h1{
+        letter-spacing: -20px;
+    }
+}
+.actives{
+    background-color: $carouselBackground!important;
+}
